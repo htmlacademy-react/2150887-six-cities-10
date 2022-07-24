@@ -1,15 +1,11 @@
-import { MainPage, MainPageProps } from '../../pages/main-page/MainPage';
-import { Header } from '../header/Header';
+import { MainPage, MainPageProps } from '../../pages/main-page/main-page';
 
 
 function App({placesNumber} : MainPageProps): JSX.Element {
   return (
-    <div className="page page--gray page--main">
-      <Header />
-      <MainPage
-        placesNumber={placesNumber}
-      />
-    </div>
+    <MainPage
+      placesNumber={placesNumber}
+    />
   );
 }
 
