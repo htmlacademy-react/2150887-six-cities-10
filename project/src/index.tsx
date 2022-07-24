@@ -6,8 +6,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 
+const AVAILABLE_PLACES_NUMBER = 987;
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App
+      placesNumber={AVAILABLE_PLACES_NUMBER}
+    />
   </React.StrictMode>,
 );
